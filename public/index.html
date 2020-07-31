@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Portfole</title>
+		<meta charset=utf-8>
+		<link rel=stylesheet href=css/bootstrap-grid.min.css>
+		<link rel=stylesheet href=css/fontawesome.css>
+		<link rel=stylesheet href=css/style.css>
+	</head>
+	<body>
+	
+		<nav class="js-vue-nav page-nav-wrap">
+			<button class="vue-nav-toggle" @click="navToggle"><span class="fas fa-bars"></span></button>
+			<div class="container">			
+				<div class="page-nav">
+					<ul class="page-nav-links">
+						<li class="links_item"><a href="#home">На верх</a></li>
+						<li class="links_item"><a href="#about">О бо мне</a></li>
+						<li class="links_item"><a href="#skills">Навыки</a></li>
+						<li class="links_item"><a href="#prod">Портфолио</a></li>
+					</ul>
+					<div is="contacts-menu"></div>
+				</div>
+			</div>
+		</nav>
+
+
+		<header class=page-header-wrap id=home>
+			<div class="page-header container">
+				<h1 class="page-header-title">Добро пожаловать на мой сайт)</h1>
+				<div class="space-middle"></div>
+				<a href="#prod" class="btn btn--color-1 btn--big btn--radius">Портфолио</a>
+			</div>
+		</header>
+
+
+
+		<main id="vue-app">
+			<section class=section-wrap id=about>
+				<div class="about container">
+					<div class="row">
+						<div class="col-md-6">
+							<img class=main-img src="img/man-laptop-v1.svg">
+						</div>
+						<div class="col-md-6">
+							<div class=main-info>
+								<h3>Немного о бо мне...</h3>
+								<p>Я занимаюсь разработкой сайтов на платформе вордпресс и не только. Для меня это не просто способ зароботка но и любимое занятие. Я постоянно изучаю что-то новое что-бы не отставать от колег.</p>
+								<p>Я в совершенстве владею CSS3, HTML5, JS. Умею работать с фреймворками Vue.js, Bootstrap.</p>
+							<div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=section-wrap id=skills>
+				<div class="container">
+					<h2 class="section__title">Навыки</h2>
+					<hr class="section__spliter">
+					<ul class="skills-list row justify-content-center">
+						<li><i class="fab fa-html5"></i></li>
+						<li><i class="fab fa-css3-alt"></i></li>
+						<li><i class="fab fa-js"></i></li>
+						<li><i class="fab fa-vuejs"></i></li>
+						<li><i class="fab fa-bootstrap"></i></li>
+						<li><i class="fab fa-wordpress"></i></li>
+						<li><i class="fab fa-php"></i></li>
+					</ul>
+				</div>
+			</section>
+
+			<section class=section-wrap id=prod>
+				<div class="container">
+					<h2 class="section__title">Портфолио</h2>
+					<hr class="section__spliter">
+					<div is="products-widget"></div>
+				</div>
+			</section>
+		</main>
+
+
+		<footer class="page-footer-wrap">
+			<div class="page-footer container">
+				<div is="contacts-menu"></div>
+			</div>
+		</footer>
+
+
+		<script src=js/main.js type=module></script>
+	</body>
+</html>
